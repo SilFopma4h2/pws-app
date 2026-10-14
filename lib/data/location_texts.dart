@@ -25,15 +25,18 @@ const Map<String, LocationText> locationTextsA = {
         'Arnhem, over de rivier de Rijn.\n\n'
         'Op 17 september 1944 sprongen duizenden Britse soldaten met een '
         'parachute uit vliegtuigen. Ze landden op de hei, ver van de brug. '
-        'Ze moesten nog ongeveer 10 kilometer lopen!',
+        'Ze moesten nog ongeveer 10 kilometer lopen!\n\n'
+        'Vanuit dit huis gaf de Britse generaal Urquhart zijn bevelen. Hier '
+        'werd de verdediging van Oosterbeek geleid. Nu is het huis een '
+        'museum: het Airborne Museum.',
   ),
   'cemetery': LocationText(
     teaser:
         'Een stille plek tussen de bomen. Hier liggen soldaten begraven die '
         'nooit meer thuiskwamen.',
     shortDescription:
-        'Op deze begraafplaats liggen meer dan 1.700 soldaten. Zij stierven '
-        'tijdens de Slag om Arnhem.',
+        'Op deze begraafplaats liggen 1.770 soldaten van de geallieerden. De '
+        'meesten stierven tijdens de Slag om Arnhem.',
     historyText:
         'Veel van deze soldaten waren nog heel jong, soms pas 18 of 19 jaar. '
         'Ze hadden ouders, broers, zussen en vrienden.\n\n'
@@ -45,15 +48,17 @@ const Map<String, LocationText> locationTextsA = {
   'mortierput': LocationText(
     teaser: 'Het lijkt gewoon een kuil in het bos. Maar kijk eens goed...',
     shortDescription:
-        'Hier zie je nog sporen van de strijd uit 1944. Soldaten groeven hier '
-        'kuilen om zich te beschermen.',
+        'Aan de Van Lennepweg zie je nog een spoor van de strijd uit 1944: '
+        'een kuil waaruit soldaten met een mortier schoten.',
     historyText:
         'Tijdens de gevechten groeven soldaten kuilen in de grond. In zo’n '
         'kuil waren ze beter beschermd tegen kogels.\n\n'
         'Vanuit sommige kuilen schoten ze met een mortier. Een mortier is een '
         'soort kanon dat in een hoge boog schiet, over bomen en huizen heen.\n\n'
-        'Na 80 jaar zijn de meeste kuilen vol blaadjes en zand. Maar hier en '
-        'daar zie je de vorm nog in de grond.',
+        'In deze kuil zaten Britse soldaten van het Border Regiment. Ze '
+        'schoten op Duitse soldaten die van de noordkant aanvielen.\n\n'
+        'Na 80 jaar zijn de meeste kuilen vol blaadjes en zand. Maar deze '
+        'kuil kun je nog steeds herkennen in de grond.',
   ),
   'dreyeroord': LocationText(
     teaser:
@@ -67,8 +72,15 @@ const Map<String, LocationText> locationTextsA = {
         'Britten het “The White House”.\n\n'
         'De Schotse soldaten vochten hier dagenlang. Veel van hen raakten '
         'gewond. Ze hadden bijna geen eten, water en kogels meer.\n\n'
+        'Op 21 september vielen de Duitsers het hotel aan. Dat heet nu de '
+        'Slag om het Witte Huis. De Schotten moesten het hotel daarna '
+        'verlaten.\n\n'
         'De mensen van het hotel zaten al die tijd in de kelder. Buiten werd '
         'gevochten en hun hotel ging kapot.',
+    // CONTROLEER: sloop en herbouw van het hotel.
+    readMoreText:
+        'Het oude hotel is in 2018 afgebroken. Het gebouw dat je nu ziet, is '
+        'in 2019 nagebouwd in de oude stijl.',
   ),
   'oude_kerk': LocationText(
     teaser:
@@ -80,15 +92,38 @@ const Map<String, LocationText> locationTextsA = {
         'De Britten zaten vast in Oosterbeek. Om hen heen stonden de Duitsers. '
         'Alleen de kant van de rivier was nog open. Op een kaart leek hun '
         'gebied op een hoefijzer.\n\n'
+        'Deze kerk lag aan de zuidkant van dat gebied. Majoor Lonsdale '
+        'verzamelde hier soldaten van verschillende groepen. Samen heetten '
+        'ze de Lonsdale Force. Op 20 september trokken ze zich terug naar '
+        'deze kerk.\n\n'
         'In het huis naast de kerk woonde Kate ter Horst met haar vijf '
         'kinderen. Zij zorgde voor honderden gewonde soldaten. Ze las hen voor '
         'uit de Bijbel om ze te troosten.\n\n'
         'De gevechten waren tussen gewone huizen en tuinen, waar mensen '
         'gewoon woonden.',
   ),
-  'john_frostbrug': LocationText(
+  'airborne_bridge': LocationText(
     teaser:
-        'Het einddoel! Hier komt alles samen wat je onderweg hebt ontdekt.',
+        'Vlak bij de brug staat een klein museum. Hier hoor je de verhalen '
+        'van mensen die bij de brug waren.',
+    shortDescription:
+        'Airborne at the Bridge ligt aan de Rijnkade, vlak bij de John '
+        'Frostbrug. Hier worden verhalen verteld van mensen uit '
+        'verschillende landen.',
+    historyText:
+        'Bij de brug vochten Britse en Duitse soldaten tegen elkaar. Er was '
+        'ook een Nederlandse soldaat bij.\n\n'
+        // CONTROLEER: korte levensverhalen van historische personen.
+        'Hier leer je drie van hen kennen. John Grayburn was een Britse '
+        'luitenant. Na zijn dood kreeg hij een medaille voor dapperheid. '
+        'Viktor Gräbner was een Duitse kapitein. Hij probeerde met zijn '
+        'legervoertuigen over de brug te rijden. Jacob Groenewoud was een '
+        'Nederlandse kapitein die de Britten hielp.\n\n'
+        'Alle drie kwamen ze om bij de brug. Hun verhalen laten zien dat de '
+        'oorlog mensen uit veel landen raakte.',
+  ),
+  'john_frostbrug': LocationText(
+    teaser: 'Het einddoel! Hier komt alles samen wat je onderweg hebt ontdekt.',
     shortDescription:
         'Dit is de brug waar het allemaal om draaide. Hij heet nu de John '
         'Frostbrug, naar de Britse leider die hier vocht.',
@@ -113,7 +148,8 @@ const Map<String, LocationText> locationTextsB = {
         'beslissingen genomen die de afloop van de slag bepaalden.',
     shortDescription:
         'Villa Hartenstein was tijdens de Slag om Arnhem het hoofdkwartier van '
-        'de Britse 1e Luchtlandingsdivisie onder generaal-majoor Roy Urquhart.',
+        'de Britse 1e Luchtlandingsdivisie onder generaal-majoor Roy Urquhart. '
+        'Vanuit hier werd de verdediging van Oosterbeek aangestuurd.',
     historyText:
         'Na de doorbraak in Normandië leek de Duitse weerstand in het westen '
         'te breken. Veldmaarschalk Montgomery wilde met Operatie Market Garden '
@@ -140,6 +176,72 @@ const Map<String, LocationText> locationTextsB = {
         'contact had met zijn eenheden. Sinds 1978 is Hartenstein het '
         'Airborne Museum.',
   ),
+  'mortierput': LocationText(
+    teaser:
+        'Een ondiepe kuil langs de Van Lennepweg. Wie goed kijkt, ziet een '
+        'stelling uit 1944.',
+    shortDescription:
+        'Aan de Van Lennepweg lag in september 1944 een mortierstelling van '
+        'het 1st Battalion, The Border Regiment, aan de westkant van de '
+        'perimeter.',
+    historyText:
+        'Een mortier vuurt granaten in een steile boog af. De bemanning kan '
+        'daardoor vanuit een ingegraven, beschermde positie over bomen en '
+        'huizen heen schieten, zonder de vijand zelf te zien. Een waarnemer '
+        'verderop gaf door waar de granaten moesten neerkomen.\n\n'
+        'Vanuit deze put vuurden mannen van het 1st Border Regiment op Duitse '
+        'troepen die de perimeter vanuit het noorden aanvielen.\n\n'
+        'De kuil van de oorspronkelijke mortierput is nog steeds in de grond '
+        'te herkennen. Zo’n spoor in het landschap is een materiële bron: '
+        'het bevestigt en verrijkt wat rapporten en ooggetuigen vertellen.',
+  ),
+  'dreyeroord': LocationText(
+    teaser:
+        'Nu een gebouw in vooroorlogse stijl. In 1944 heette het “The White '
+        'House” en werd hier fel gevochten.',
+    shortDescription:
+        'Hotel Dreyeroord was in september 1944 enkele dagen het hoofdkwartier '
+        'van het 7th Battalion, King’s Own Scottish Borderers (KOSB), aan de '
+        'noordkant van de perimeter.',
+    historyText:
+        'Het witte hotel was een opvallend herkenningspunt; de Britten '
+        'noemden het “The White House”. De KOSB moesten van hieruit de '
+        'noordkant van de perimeter verdedigen.\n\n'
+        'Op 21 september 1944 vielen Duitse troepen het hotel en de omgeving '
+        'aan. Bij deze “Battle of the White House” leden de Schotten zware '
+        'verliezen. Uiteindelijk moesten ze het hotel verlaten en zich '
+        'verder terugtrekken in de perimeter.\n\n'
+        'Ook burgers waren bij de gevechten betrokken: de familie die het '
+        'hotel bewoonde, schuilde dagenlang in de kelder.',
+    // CONTROLEER: sloop en herbouw van het hotel.
+    readMoreText:
+        'Het oorspronkelijke hotel sloot in 2014 en werd in 2018 gesloopt. Het '
+        'huidige gebouw is in 2019 in de vooroorlogse stijl teruggebouwd.',
+  ),
+  'cemetery': LocationText(
+    teaser:
+        'Rijen witte grafstenen tussen de bomen. Achter elke steen zit een '
+        'verhaal.',
+    shortDescription:
+        'Op de Arnhem Oosterbeek War Cemetery liggen 1.770 geallieerde '
+        'militairen begraven. De meesten sneuvelden tijdens de Slag om Arnhem '
+        'in september 1944.',
+    historyText:
+        // CONTROLEER: herbegraving na de oorlog.
+        'Direct na de slag werden doden vaak begraven waar ze vielen: in '
+        'tuinen, parken en bermen. Na de oorlog werden de graven op deze '
+        'begraafplaats bijeengebracht. De Commonwealth War Graves Commission '
+        'onderhoudt haar.\n\n'
+        'Op de grafstenen staan naam, rang, eenheid, leeftijd en soms een '
+        'tekst van de familie. Veel gesneuvelden waren nog geen twintig. Het '
+        'aantal graven maakt zichtbaar hoeveel mensen bij de strijd '
+        'betrokken waren.\n\n'
+        'Sinds 1945 leggen schoolkinderen uit Oosterbeek bij de jaarlijkse '
+        'herdenking bloemen op de graven. Zo wordt de herinnering '
+        'doorgegeven.\n\n'
+        'Gedraag je hier rustig. Doe de opdrachten bij de ingang of op een '
+        'bankje, niet tussen de graven.',
+  ),
   'oude_kerk': LocationText(
     teaser:
         'Een eeuwenoude kerk vlak bij de Rijn. In 1944 lag hij midden in de '
@@ -153,13 +255,21 @@ const Map<String, LocationText> locationTextsB = {
         'hoefijzervormige perimeter rond Hartenstein. De open kant lag aan de '
         'Rijn: alleen daarlangs konden nog versterkingen komen. De Duitsers '
         'noemden het gebied de “Hexenkessel” (heksenketel).\n\n'
-        'Bij de Oude Kerk verzamelde majoor Richard Lonsdale soldaten uit '
-        'verschillende, uiteengeslagen eenheden. Deze “Lonsdale Force” '
-        'verdedigde de zuidoostkant van de perimeter tegen aanvallen met '
-        'tanks en artillerie.\n\n'
-        'In de pastorie naast de kerk verzorgde Kate ter Horst honderden '
+        'Majoor Richard Lonsdale verzamelde soldaten uit verschillende, '
+        'uiteengeslagen eenheden. Op 20 september trok deze “Lonsdale Force” '
+        'zich terug op de Oude Kerk, een van de zuidelijkste punten van de '
+        'perimeter. Vanaf hier verdedigden ze de zuidoostkant tegen '
+        'aanvallen met tanks en artillerie.\n\n'
+        'In de pastorie naast de kerk, die als hulppost diende, verzorgde '
+        'Kate ter Horst honderden '
         'gewonden, terwijl haar eigen kinderen in de kelder zaten. Ook andere '
-        'burgers werden overvallen door de strijd in hun straat.',
+        'burgers werden overvallen door de strijd in hun straat.\n\n'
+        'Vanaf de kerk kijk je over de Rijn naar Driel. Daar landden op 21 '
+        'september, twee dagen later dan gepland door slecht weer, Poolse '
+        'parachutisten van generaal Sosabowski. De veerpont was onbruikbaar; '
+        'in kleine boten bereikten maar enkele honderden Polen de perimeter. '
+        'In de nacht van 25 op 26 september werden zo’n 2.400 man juist '
+        'andersom over de rivier geëvacueerd: Operatie Berlin.',
     readMoreText:
         'Burgers in de perimeter zaten dagenlang in kelders zonder stromend '
         'water of elektriciteit. Na de slag moesten alle inwoners van '
@@ -193,15 +303,21 @@ const Map<String, LocationText> locationTextsB = {
         'kreeg hij van Britse leiders deels de schuld van het mislukken en '
         'werd hij uit zijn functie gezet. Pas veel later werd zijn rol '
         'eerlijker beoordeeld; in 2006 kreeg de Poolse brigade postuum de '
-        'Militaire Willems-Orde.',
+        'Militaire Willems-Orde. Het Drielse Veer ligt nu op fietsroutes '
+        'als de Liberation Route, die plekken uit de oorlog met elkaar '
+        'verbinden.',
   ),
   'airborne_bridge': LocationText(
     teaser:
         'Eén brug, vier dagen, honderden verhalen. Wie vertelt het verhaal – '
         'en waarom vertelt iedereen het anders?',
     shortDescription:
-        'Het informatiecentrum Airborne at the Bridge vertelt het verhaal van '
-        'de strijd om de brug vanuit verschillende perspectieven.',
+        // CONTROLEER: rollen van historische personen.
+        'Airborne at the Bridge aan de Rijnkade vertelt het verhaal van de '
+        'strijd om de brug vanuit verschillende perspectieven, onder meer '
+        'via de Britse luitenant John Grayburn, de Duitse '
+        'Hauptsturmführer (SS-kapitein) Viktor Eberhard Gräbner en de '
+        'Nederlandse kapitein Jacob Groenewoud.',
     historyText:
         'Britse en Poolse soldaten, Duitse troepen en Nederlandse burgers '
         'maakten dezelfde dagen mee, maar zagen ze heel anders. Ieder '

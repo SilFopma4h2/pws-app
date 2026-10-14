@@ -70,8 +70,7 @@ const Map<String, Mission> missionsA = {
         type: MissionType.textInput,
         prompt: 'Over welke rivier lag de brug in Arnhem? Typ de naam.',
         acceptedAnswers: ['Rijn', 'Nederrijn', 'Neder-Rijn', 'de Rijn'],
-        wrongFeedback:
-            'Nog niet. De naam staat in de uitleg en op de kaart.',
+        wrongFeedback: 'Nog niet. De naam staat in de uitleg en op de kaart.',
         hints: ['De naam heeft vier letters en begint met een R.'],
         explanation: 'Goed! Het is de Rijn.',
       ),
@@ -99,6 +98,35 @@ const Map<String, Mission> missionsA = {
         explanation:
             'Goed gecombineerd! Ver lopen en weinig soldaten tegelijk: zo '
             'kregen de Duitsers tijd om zich voor te bereiden.',
+      ),
+      MissionTask(
+        id: 'a_h4',
+        type: MissionType.trueFalse,
+        prompt:
+            'Vanuit dit huis werd in 1944 de verdediging van Oosterbeek '
+            'geleid.',
+        options: trueFalseOptions,
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de laatste alinea van de uitleg.',
+        hints: ['Wat is een hoofdkwartier?'],
+        explanation:
+            'Juist! Generaal Urquhart gaf vanuit Hartenstein zijn bevelen.',
+      ),
+      MissionTask(
+        id: 'a_h5',
+        type: MissionType.multipleChoice,
+        prompt: 'Wat is Villa Hartenstein nu?',
+        options: [
+          'Een museum over de Slag om Arnhem.',
+          'Een school.',
+          'Een hotel voor toeristen.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Kijk eens naar het bord bij de ingang.',
+        hints: ['Het heet het Airborne ...'],
+        explanation:
+            'Klopt! In het Airborne Museum kun je zien wat hier in 1944 '
+            'gebeurde.',
       ),
     ],
   ),
@@ -153,8 +181,7 @@ const Map<String, Mission> missionsA = {
         correctIndices: {0},
         wrongFeedback: 'Lees de uitleg nog een keer rustig door.',
         hints: ['Kijk in de uitleg bij welk jaar het begon.'],
-        explanation:
-            'Dat klopt. Ieder jaar opnieuw, al sinds 1945.',
+        explanation: 'Dat klopt. Ieder jaar opnieuw, al sinds 1945.',
       ),
       MissionTask(
         id: 'a_c3',
@@ -168,8 +195,30 @@ const Map<String, Mission> missionsA = {
         correctIndices: {0},
         wrongFeedback: 'Denk rustig na over wat herdenken betekent.',
         hints: ['Herdenken betekent: samen terugdenken aan iemand.'],
+        explanation: 'Ja. Zo geven we de herinnering door aan nieuwe kinderen.',
+      ),
+      MissionTask(
+        id: 'a_c4',
+        type: MissionType.multipleChoice,
+        prompt: 'Hoeveel soldaten liggen hier begraven?',
+        options: ['Ongeveer 1.770', 'Ongeveer 17', 'Ongeveer 17.000'],
+        correctIndices: {0},
+        wrongFeedback: 'Lees de uitleg nog een keer rustig door.',
+        hints: ['Het getal staat in de eerste zin van de uitleg.'],
         explanation:
-            'Ja. Zo geven we de herinnering door aan nieuwe kinderen.',
+            'Dat klopt. 1.770 mensen, en ieder van hen had familie en '
+            'vrienden.',
+      ),
+      MissionTask(
+        id: 'a_c5',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Veel soldaten hier waren nog heel jong. Hoe oud waren sommigen?',
+        options: ['18 of 19 jaar', 'Ongeveer 50 jaar', 'Ongeveer 80 jaar'],
+        correctIndices: {0},
+        wrongFeedback: 'Lees de uitleg nog een keer rustig door.',
+        hints: ['Kijk in de eerste zin van de uitleg.'],
+        explanation: 'Ja. Ze waren nog maar net volwassen.',
       ),
     ],
   ),
@@ -236,6 +285,36 @@ const Map<String, Mission> missionsA = {
             'Precies. Daarom is het belangrijk om de sporen die er nog zijn '
             'te beschermen.',
       ),
+      MissionTask(
+        id: 'a_p4',
+        type: MissionType.multipleChoice,
+        prompt: 'Welke soldaten schoten vanuit deze kuil?',
+        options: [
+          'Britse soldaten van het Border Regiment.',
+          'Amerikaanse piloten.',
+          'Nederlandse politieagenten.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de uitleg nog eens.',
+        hints: ['De naam van de groep staat in de uitleg.'],
+        explanation: 'Goed! Het Border Regiment verdedigde deze kant.',
+      ),
+      MissionTask(
+        id: 'a_p5',
+        type: MissionType.multipleChoice,
+        prompt: 'Van welke kant vielen de Duitsers hier aan?',
+        options: [
+          'Van de noordkant.',
+          'Vanaf de rivier in het zuiden.',
+          'Ze vielen hier niet aan.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Aan de rivierkant stonden geen Duitsers.',
+        hints: ['Denk aan het hoefijzer: welke kant was open?'],
+        explanation:
+            'Klopt! Vanuit de kuil schoten ze op Duitsers die van het noorden '
+            'kwamen.',
+      ),
     ],
   ),
 
@@ -292,6 +371,30 @@ const Map<String, Mission> missionsA = {
         hints: ['Waar was het het veiligst?'],
         explanation:
             'Juist. Oorlog raakt niet alleen soldaten, maar ook gewone mensen.',
+      ),
+      MissionTask(
+        id: 'a_d4',
+        type: MissionType.multipleChoice,
+        prompt: 'Wat gebeurde hier op 21 september 1944?',
+        options: [
+          'De Duitsers vielen het hotel aan.',
+          'Er was een groot feest.',
+          'Het hotel ging voor het eerst open.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de derde alinea van de uitleg.',
+        hints: ['Het heet nu de Slag om het Witte Huis.'],
+        explanation: 'Klopt. Dat heet nu de Slag om het Witte Huis.',
+      ),
+      MissionTask(
+        id: 'a_d5',
+        type: MissionType.trueFalse,
+        prompt: 'De Schotse soldaten konden het hotel tot het einde houden.',
+        options: trueFalseOptions,
+        correctIndices: {1},
+        wrongFeedback: 'Nog niet. Lees wat er na de aanval gebeurde.',
+        hints: ['Bleven ze in het hotel?'],
+        explanation: 'Onjuist is goed! Ze moesten het hotel verlaten.',
       ),
     ],
   ),
@@ -367,6 +470,105 @@ const Map<String, Mission> missionsA = {
             'Juist. Ze troostte de gewonden, terwijl ze ook voor haar vijf '
             'kinderen zorgde.',
       ),
+      MissionTask(
+        id: 'a_k4',
+        type: MissionType.textInput,
+        prompt:
+            'Majoor Lonsdale verzamelde bij deze kerk soldaten. Hoe heette die '
+            'groep? Typ de naam.',
+        acceptedAnswers: [
+          'Lonsdale Force',
+          'Lonsdale',
+          'de Lonsdale Force',
+          'Lonsdaleforce',
+        ],
+        wrongFeedback: 'Nog niet. De groep is genoemd naar de majoor.',
+        hints: ['Het tweede woord is Force.'],
+        explanation: 'Goed! De Lonsdale Force verdedigde de kerk.',
+      ),
+      MissionTask(
+        id: 'a_k5',
+        type: MissionType.multipleChoice,
+        prompt: 'Waar werd hier gevochten?',
+        options: [
+          'Tussen gewone huizen en tuinen.',
+          'Alleen in het bos, ver van de huizen.',
+          'Op een groot leeg veld.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de laatste zin van de uitleg.',
+        hints: ['Kijk om je heen. Wat zie je?'],
+        explanation:
+            'Juist. Mensen woonden hier gewoon, midden in de gevechten.',
+      ),
+    ],
+  ),
+
+  'airborne_bridge': Mission(
+    id: 'm_airborne_bridge_a',
+    title: 'Verhalen bij de brug',
+    intro:
+        'Bij de brug vochten mensen uit verschillende landen. Leer drie van '
+        'hen kennen.',
+    clueId: 'clue_perspectives',
+    keyInsight:
+        'Bij de brug waren mensen uit Engeland, Duitsland en Nederland. '
+        'Iedereen heeft een eigen verhaal.',
+    completionText: 'Goed gedaan! Jullie kennen nu de verhalen achter de brug.',
+    tasks: [
+      MissionTask(
+        id: 'a_b1',
+        type: MissionType.matching,
+        prompt: 'Koppel iedere persoon aan het juiste land.',
+        pairs: [
+          MatchPair('John Grayburn', 'Britse luitenant'),
+          MatchPair('Viktor Gräbner', 'Duitse kapitein'),
+          MatchPair('Jacob Groenewoud', 'Nederlandse kapitein'),
+        ],
+        wrongFeedback: 'Nog niet. Lees de tweede alinea van de uitleg.',
+        hints: ['Groenewoud klinkt als een Nederlandse naam.'],
+        explanation: 'Alles klopt! Drie mensen uit drie landen.',
+      ),
+      MissionTask(
+        id: 'a_b2',
+        type: MissionType.multipleChoice,
+        prompt: 'Wat probeerde Viktor Gräbner te doen?',
+        options: [
+          'Met zijn legervoertuigen over de brug rijden.',
+          'De brug schilderen.',
+          'Een nieuwe brug bouwen.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de tweede alinea van de uitleg.',
+        explanation:
+            'Klopt. Hij wilde de Britten aan de noordkant van de brug '
+            'verdrijven.',
+      ),
+      MissionTask(
+        id: 'a_b3',
+        type: MissionType.trueFalse,
+        prompt: 'Bij de brug waren alleen Britse soldaten.',
+        options: trueFalseOptions,
+        correctIndices: {1},
+        wrongFeedback: 'Nog niet. Uit welke landen kwamen de drie mensen?',
+        explanation:
+            'Onjuist is goed! Er waren ook Duitsers en een Nederlander.',
+      ),
+      MissionTask(
+        id: 'a_b4',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Waarom is het goed om verhalen van mensen uit verschillende '
+            'landen te horen?',
+        options: [
+          'Dan begrijp je beter wat iedereen meemaakte.',
+          'Dan hoef je minder te lezen.',
+          'Dan weet je wie de wedstrijd won.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Denk aan de Britten én de Duitsers.',
+        explanation: 'Juist. Iedereen zag dezelfde dagen op een andere manier.',
+      ),
     ],
   ),
 };
@@ -394,7 +596,8 @@ const Map<String, Mission> missionsB = {
       MissionTask(
         id: 'b_h1',
         type: MissionType.multipleChoice,
-        prompt: 'Wat was het strategische doel van Montgomery met Market Garden?',
+        prompt:
+            'Wat was het strategische doel van Montgomery met Market Garden?',
         options: [
           'De Siegfriedlinie omzeilen, de Rijn oversteken en het Ruhrgebied '
               'bereiken.',
@@ -475,13 +678,341 @@ const Map<String, Mission> missionsB = {
         pairs: [
           MatchPair('Market', 'Luchtlandingsdivisies nemen de bruggen in'),
           MatchPair('Garden', 'XXX Corps rukt over één weg naar het noorden'),
-          MatchPair('Urquhart', 'Commandant van de Britse 1e Luchtlandingsdivisie'),
-          MatchPair('Bittrich', 'Duitse generaal van de SS-pantsertroepen bij Arnhem'),
+          MatchPair(
+            'Urquhart',
+            'Commandant van de Britse 1e Luchtlandingsdivisie',
+          ),
+          MatchPair(
+            'Bittrich',
+            'Duitse generaal van de SS-pantsertroepen bij Arnhem',
+          ),
         ],
         wrongFeedback: 'Nog niet. Eén of meer koppelingen kloppen niet.',
         explanation:
             'Alles klopt. Market en Garden waren afhankelijk van elkaar: '
             'zonder Garden konden de luchtlandingstroepen niet lang standhouden.',
+      ),
+      MissionTask(
+        id: 'b_h5',
+        type: MissionType.multipleChoice,
+        prompt: 'Welke functie had Villa Hartenstein tijdens de slag?',
+        options: [
+          'Hoofdkwartier van waaruit Urquhart de verdediging van Oosterbeek '
+              'aanstuurde.',
+          'Duits hoofdkwartier van generaal Bittrich.',
+          'Veldhospitaal van het Rode Kruis.',
+          'Opslagplaats voor afgeworpen voorraden.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de korte beschrijving van deze plek.',
+        explanation:
+            'Juist. Vanuit Hartenstein leidde Urquhart de verdediging van de '
+            'perimeter.',
+      ),
+      MissionTask(
+        id: 'b_h6',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Hartenstein is nu het Airborne Museum. Wat is het voordeel voor '
+            'historisch onderzoek dat het museum juist op deze plek zit?',
+        options: [
+          'Je kunt de bronnen in het museum koppelen aan de plek waar het '
+              'gebeurde.',
+          'Een museum op een historische plek is altijd objectief.',
+          'Je hoeft daarna geen andere bronnen meer te raadplegen.',
+          'Alleen ooggetuigen mogen er werken.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Is een museum ooit helemaal objectief?',
+        explanation:
+            'Juist. De plek zelf is een bron. Maar ook een museum maakt keuzes '
+            'in wat het laat zien.',
+      ),
+    ],
+  ),
+
+  'mortierput': Mission(
+    id: 'm_mortierput_b',
+    title: 'Sporen als bron',
+    intro:
+        'Langs de Van Lennepweg ligt een ondiepe kuil. Onderzoek wat deze '
+        'stelling vertelt over de verdediging van de perimeter.',
+    clueId: 'clue_traces',
+    keyInsight:
+        'Ingegraven stellingen zoals de mortierput zijn materiële sporen van '
+        'de strijd. Ze bevestigen en verrijken wat geschreven bronnen '
+        'vertellen.',
+    completionText:
+        'Jullie hebben een spoor in het landschap gelezen als historische '
+        'bron.',
+    tasks: [
+      MissionTask(
+        id: 'b_p1',
+        type: MissionType.imageObservation,
+        prompt:
+            'Bekijk de foto. Welke conclusie kun je trekken uit de vorm van de '
+            'stelling?',
+        imageAsset: 'assets/images/documents/mortierput_1944.jpg',
+        imageCaption:
+            'Een ronde kuil met een wal van aarde eromheen. Naast de kuil '
+            'liggen lege kisten.',
+        options: [
+          'De wal beschermde de bemanning, terwijl de mortier over de dekking '
+              'heen kon vuren.',
+          'De kuil was bedoeld om water op te vangen.',
+          'De stelling was een schuilplaats voor burgers.',
+          'De kuil is na de oorlog gegraven als monument.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Let op de wal en de lege munitiekisten.',
+        explanation:
+            'Juist. De vorm van de stelling past bij hoe een mortier werkt.',
+      ),
+      MissionTask(
+        id: 'b_p2',
+        type: MissionType.multipleChoice,
+        prompt: 'Welke eenheid gebruikte deze mortierput?',
+        options: [
+          '1st Battalion, The Border Regiment',
+          '7th King’s Own Scottish Borderers',
+          'Het 2e Bataljon van John Frost',
+          'De Poolse brigade van Sosabowski',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de korte beschrijving van deze plek.',
+        explanation:
+            'Klopt. Het Border Regiment verdedigde de westkant van de '
+            'perimeter.',
+      ),
+      MissionTask(
+        id: 'b_p3',
+        type: MissionType.mapQuestion,
+        prompt:
+            'Vanuit welke richting vielen de Duitse troepen aan waarop vanuit '
+            'deze put werd gevuurd?',
+        mapLabels: [
+          MapLabel('Oosterbeek', 0.38, 0.32),
+          MapLabel('Rijn', 0.20, 0.70),
+          MapLabel('Driel', 0.42, 0.88),
+        ],
+        mapPoints: [
+          MapPoint('A', 0.45, 0.16),
+          MapPoint('B', 0.22, 0.42),
+          MapPoint('C', 0.66, 0.42),
+          MapPoint('D', 0.45, 0.58),
+        ],
+        options: [
+          'A – vanuit het noorden',
+          'B – vanuit het westen',
+          'C – vanuit het oosten',
+          'D – vanuit het zuiden (de Rijn)',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de tweede alinea van de uitleg.',
+        explanation:
+            'Juist. De mortieren vuurden op aanvallen vanuit het noorden.',
+      ),
+      MissionTask(
+        id: 'b_p4',
+        type: MissionType.multipleChoice,
+        prompt: 'Waarom kon een mortier vanuit een ingegraven kuil vuren?',
+        options: [
+          'Hij vuurt in een steile boog over dekking heen; een waarnemer geeft '
+              'door waar de granaten moeten landen.',
+          'Hij vuurt recht vooruit, dus de bemanning moest het doel zien.',
+          'Mortieren werkten alleen vanuit gebouwen.',
+          'De kuil versterkte het geluid om de vijand af te schrikken.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de eerste alinea van de uitleg.',
+        explanation:
+            'Klopt. Daardoor kon de bemanning beschermd blijven en toch '
+            'effectief vuren.',
+      ),
+    ],
+  ),
+
+  'dreyeroord': Mission(
+    id: 'm_dreyeroord_b',
+    title: 'The White House',
+    intro:
+        'Hier stond Hotel Dreyeroord, in 1944 “The White House”. Onderzoek '
+        'wat de gevechten hier zeggen over de toestand in de perimeter.',
+    clueId: 'clue_white_house',
+    keyInsight:
+        'De KOSB verdedigden het Witte Huis aan de noordkant van de perimeter. '
+        'Na de aanval van 21 september moesten ze het met zware verliezen '
+        'opgeven: te weinig mannen en middelen voor een te groot gebied.',
+    completionText:
+        'Jullie hebben de strijd om het Witte Huis gereconstrueerd.',
+    tasks: [
+      MissionTask(
+        id: 'b_d1',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Welke eenheid had in Hotel Dreyeroord enkele dagen haar '
+            'hoofdkwartier?',
+        options: [
+          '7th Battalion, King’s Own Scottish Borderers',
+          '1st Battalion, The Border Regiment',
+          'Lonsdale Force',
+          'Het 2e Bataljon van John Frost',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de korte beschrijving van deze plek.',
+        explanation: 'Juist. De Schotse KOSB verdedigden de noordkant.',
+      ),
+      MissionTask(
+        id: 'b_d2',
+        type: MissionType.ordering,
+        prompt: 'Zet de gebeurtenissen in chronologische volgorde.',
+        items: [
+          '17 sept: landingen bij Wolfheze en Renkum.',
+          '19 sept: de perimeter rond Oosterbeek ontstaat.',
+          '21 sept: Battle of the White House bij Hotel Dreyeroord.',
+          'Nacht 25/26 sept: Operatie Berlin, de evacuatie over de Rijn.',
+        ],
+        wrongFeedback: 'Nog niet. Let op de data.',
+        explanation:
+            'Goed. De aanval op het Witte Huis viel midden in de '
+            'verdedigingsfase.',
+      ),
+      MissionTask(
+        id: 'b_d3',
+        type: MissionType.informationCombination,
+        prompt:
+            'Waarom moesten de Schotten het Witte Huis opgeven? Kies alle '
+            'juiste.',
+        infoCards: [
+          'Na dagen van gevechten was de KOSB sterk in aantal afgenomen.',
+          'Voedsel, water en munitie raakten op; veel voorraden die uit de '
+              'lucht werden afgeworpen, kwamen bij de Duitsers terecht.',
+          'De perimeter was te groot voor de overgebleven troepen.',
+        ],
+        options: [
+          'Te weinig manschappen na zware verliezen.',
+          'Een tekort aan munitie, voedsel en water.',
+          'Een te groot gebied om te verdedigen.',
+          'Ze kregen bevel om naar de brug in Arnhem te gaan.',
+        ],
+        correctIndices: {0, 1, 2},
+        wrongFeedback:
+            'Nog niet. Controleer elke optie aan de kaartjes: wat wordt '
+            'bevestigd en wat niet?',
+        hints: ['Eén optie wordt door geen enkel kaartje ondersteund.'],
+        explanation:
+            'Goed. Verliezen, tekorten en een te groot gebied versterkten '
+            'elkaar.',
+      ),
+      MissionTask(
+        id: 'b_d4',
+        type: MissionType.multipleChoice,
+        prompt:
+            'De familie van het hotel schuilde in de kelder. Wat laat dit zien '
+            'over de slag?',
+        options: [
+          'Burgers zaten midden in de gevechten en konden er niet aan '
+              'ontsnappen.',
+          'Burgers waren allemaal op tijd geëvacueerd.',
+          'De gevechten vonden alleen buiten de bebouwing plaats.',
+          'Het hotel werd niet beschadigd.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Lees de laatste alinea van de uitleg.',
+        explanation:
+            'Juist. De Slag om Arnhem werd gevochten in de tuinen en kelders '
+            'van gewone mensen.',
+      ),
+    ],
+  ),
+
+  'cemetery': Mission(
+    id: 'm_cemetery_b',
+    title: 'Achter elke steen een naam',
+    intro:
+        'Dit is een stille plek. Ga rustig bij de ingang of op een bankje '
+        'zitten. Onderzoek hoe we de gevallenen herdenken.',
+    clueId: 'clue_remembrance',
+    tone: MissionTone.respectful,
+    keyInsight:
+        'Op de begraafplaats liggen 1.770 geallieerde militairen. Herdenken '
+        'houdt hun verhalen levend en laat de prijs van de slag zien.',
+    completionText:
+        'Dank voor jullie aandacht. Deze verhalen worden ieder jaar opnieuw '
+        'verteld bij de herdenking.',
+    tasks: [
+      MissionTask(
+        id: 'b_c1',
+        type: MissionType.multipleChoice,
+        prompt: 'Wat laat het verhaal van David Lord vooral zien?',
+        infoCards: [
+          // CONTROLEER: verhaal is gebaseerd op openbare bronnen (CWGC).
+          'Flight Lieutenant David Lord vloog op 19 september 1944 een '
+              'bevoorradingsvlucht boven Oosterbeek.',
+          'Zijn Dakota werd geraakt en vloog in brand. Toch maakte hij een '
+              'tweede ronde om alle voorraden af te werpen.',
+          'Kort daarna stortte het toestel neer. Lord kwam om, kreeg postuum '
+              'het Victoria Cross en ligt hier begraven.',
+        ],
+        options: [
+          'Hij nam bewust een dodelijk risico om de ingesloten troepen te '
+              'bevoorraden.',
+          'Bevoorrading uit de lucht verliep zonder problemen.',
+          'Hij was een Duitse piloot.',
+          'Hij werd na de oorlog in Engeland begraven.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Lees de kaartjes nog een keer rustig door.',
+        explanation:
+            'Dat klopt. Zijn verhaal laat zien hoeveel mensen hier gaven voor '
+            'anderen.',
+      ),
+      MissionTask(
+        id: 'b_c2',
+        type: MissionType.multipleChoice,
+        prompt: 'Hoeveel geallieerde militairen liggen hier begraven?',
+        options: ['1.770', '177', '17.700', 'Ongeveer 10.000'],
+        correctIndices: {0},
+        wrongFeedback: 'Lees de korte beschrijving nog een keer rustig door.',
+        explanation:
+            'Dat klopt. Achter dat getal staan 1.770 levens en families.',
+      ),
+      MissionTask(
+        id: 'b_c3',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Direct na de slag werden doden vaak begraven waar ze vielen. '
+            'Waarom werden ze na de oorlog op één begraafplaats bijeengebracht?',
+        options: [
+          'Om de graven blijvend te onderhouden en een vaste plek voor '
+              'herdenking te hebben.',
+          'Omdat de Duitse bezetter dat eiste.',
+          'Om de verliezen kleiner te laten lijken.',
+          'Omdat families de veldgraven niet mochten bezoeken.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Lees de eerste alinea nog een keer rustig door.',
+        explanation:
+            'Dat klopt. De CWGC zorgt dat ieder graf onderhouden blijft.',
+      ),
+      MissionTask(
+        id: 'b_c4',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Sinds 1945 leggen schoolkinderen hier bij de herdenking bloemen. '
+            'Wat is de functie van zo’n traditie?',
+        options: [
+          'De herinnering doorgeven aan generaties die de oorlog niet hebben '
+              'meegemaakt.',
+          'Toeristen naar Oosterbeek trekken.',
+          'De slag vieren als overwinning.',
+          'De begraafplaats onderhouden.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Denk rustig na over wat herdenken betekent.',
+        explanation:
+            'Ja. Zo blijft de herinnering levend, ook nu er bijna geen '
+            'ooggetuigen meer zijn.',
       ),
     ],
   ),
@@ -543,8 +1074,7 @@ const Map<String, Mission> missionsB = {
           'D – zuidkant (aan de Rijn)',
         ],
         correctIndices: {3},
-        wrongFeedback:
-            'Nog niet. Waarlangs konden nog versterkingen komen?',
+        wrongFeedback: 'Nog niet. Waarlangs konden nog versterkingen komen?',
         explanation:
             'Klopt. Alleen via de Rijn konden versterkingen komen – en later '
             'vond daarlangs de terugtocht plaats.',
@@ -580,11 +1110,54 @@ const Map<String, Mission> missionsB = {
           'Dat de burgers het gebied al hadden verlaten.',
         ],
         correctIndices: {0},
-        wrongFeedback:
-            'Nog niet. Denk aan wie de naam bedacht en vanuit welk perspectief.',
+        wrongFeedback: 'Nog niet. Denk aan wie de naam bedacht en vanuit welk perspectief.',
         explanation:
             'Klopt. Een naam als deze is zelf een bron: hij laat zien hoe de '
             'aanvallers de strijd beleefden.',
+      ),
+      MissionTask(
+        id: 'b_k5',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Op 20 september trok de Lonsdale Force zich terug op de Oude '
+            'Kerk. Waarom was deze positie belangrijk voor de hele perimeter?',
+        options: [
+          'Ze lag aan de zuidkant bij de Rijn: wie hier doorbrak, kon de '
+              'Britten van de rivier afsnijden.',
+          'Vanaf de kerktoren kon men Nijmegen zien.',
+          'In de kerk lag de enige voorraad munitie.',
+          'De kerk was het hoofdkwartier van Urquhart.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Denk aan de open kant van het hoefijzer.',
+        explanation:
+            'Klopt. Verlies van dit punt had de enige verbinding met de '
+            'rivier in gevaar gebracht.',
+      ),
+      MissionTask(
+        id: 'b_k6',
+        type: MissionType.informationCombination,
+        prompt:
+            'De pastorie naast de kerk diende als hulppost. Welke conclusies '
+            'kun je trekken? Kies alle juiste.',
+        infoCards: [
+          'In de pastorie lagen honderden gewonden.',
+          'Kate ter Horst verzorgde hen, terwijl haar kinderen in de kelder '
+              'zaten.',
+          'De pastorie lag midden in het gevechtsgebied.',
+        ],
+        options: [
+          'Burgers waren direct bij de strijd betrokken.',
+          'De hulppost was niet veilig voor de gevechten.',
+          'De gewonden werden ver achter de linies verzorgd.',
+          'Kate ter Horst was een Britse militair.',
+        ],
+        correctIndices: {0, 1},
+        wrongFeedback: 'Nog niet. Controleer elke optie aan de kaartjes.',
+        hints: ['Twee conclusies kloppen.'],
+        explanation:
+            'Goed. In de perimeter was geen “achterland”: gewonden, burgers en '
+            'strijders zaten op dezelfde plek.',
       ),
     ],
   ),
@@ -693,6 +1266,42 @@ const Map<String, Mission> missionsB = {
             'Juist. Pas veel later werd zijn rol eerlijker beoordeeld; in 2006 '
             'kreeg de Poolse brigade de Militaire Willems-Orde.',
       ),
+      MissionTask(
+        id: 'b_v5',
+        type: MissionType.multipleChoice,
+        prompt: 'Welke omschrijving past het best bij de rol van de Rijn?',
+        options: [
+          'Een barrière voor versterkingen, maar ook de enige vluchtweg voor '
+              'de ingesloten Britten.',
+          'Vooral een aanvoerroute voor Duitse schepen.',
+          'Geen rol: alle gevechten waren ten noorden van de rivier.',
+          'Een verdedigingslinie die de Britten zelf hadden aangelegd.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Denk aan de Polen én aan Operatie Berlin.',
+        explanation:
+            'Juist. Dezelfde rivier hield hulp tegen en maakte de terugtocht '
+            'mogelijk.',
+      ),
+      MissionTask(
+        id: 'b_v6',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Het Drielse Veer ligt op fietsroutes als de Liberation Route. Wat '
+            'is het doel van zo’n herinneringsroute?',
+        options: [
+          'Plekken verbinden, zodat je de geschiedenis in samenhang op de plek '
+              'zelf ervaart.',
+          'Toeristen naar één museum leiden.',
+          'De officiële geschiedenis vastleggen zodat die niet meer verandert.',
+          'De oude frontlinie opnieuw markeren voor militairen.',
+        ],
+        correctIndices: {0},
+        wrongFeedback: 'Nog niet. Wat doen jullie zelf vandaag?',
+        explanation:
+            'Klopt. Precies wat jullie nu doen: plekken verbinden tot één '
+            'verhaal.',
+      ),
     ],
   ),
 
@@ -797,6 +1406,50 @@ const Map<String, Mission> missionsB = {
         explanation:
             'Goed. Populaire verhalen zijn zelf ook een bron: ze laten zien '
             'hoe er later over de gebeurtenissen werd gedacht.',
+      ),
+      MissionTask(
+        id: 'b_b5',
+        type: MissionType.matching,
+        prompt:
+            'Koppel iedere persoon uit Airborne at the Bridge aan zijn rol.',
+        // CONTROLEER: rollen van historische personen.
+        pairs: [
+          MatchPair(
+            'John Grayburn',
+            'Britse luitenant bij de brug; kreeg postuum het Victoria Cross',
+          ),
+          MatchPair(
+            'Viktor Eberhard Gräbner',
+            'SS-Hauptsturmführer die vanuit het zuiden over de brug aanviel',
+          ),
+          MatchPair(
+            'Jacob Groenewoud',
+            'Nederlandse kapitein die aan Britse zijde bij de brug vocht',
+          ),
+        ],
+        wrongFeedback: 'Nog niet. Eén of meer koppelingen kloppen niet.',
+        explanation:
+            'Alles klopt. Drie nationaliteiten, één brug, dezelfde dagen.',
+      ),
+      MissionTask(
+        id: 'b_b6',
+        type: MissionType.multipleChoice,
+        prompt:
+            'Airborne at the Bridge vertelt het verhaal van een Brit, een '
+            'Duitser én een Nederlander. Wat is daarvan de meerwaarde?',
+        options: [
+          'Je ziet dezelfde gebeurtenis vanuit meerdere perspectieven en kunt '
+              'die vergelijken.',
+          'Zo wordt duidelijk dat alleen de Britten het echte verhaal kenden.',
+          'Het Duitse perspectief maakt het verhaal minder betrouwbaar.',
+          'Het maakt de tentoonstelling vooral langer.',
+        ],
+        correctIndices: {0},
+        wrongFeedback:
+            'Nog niet. Denk aan wat een historicus doet met bronnen.',
+        explanation:
+            'Juist. Door perspectieven te vergelijken krijg je een vollediger '
+            'beeld dan uit één bron.',
       ),
     ],
   ),

@@ -16,7 +16,8 @@ const List<RouteModel> routes = [
     subtitle: 'De perimeter van Oosterbeek',
     description:
         'Volg de Britse verdediging door Oosterbeek: van het hoofdkwartier '
-        'via het Witte Huis en de Oude Kerk naar de brug in Arnhem. '
+        'via de Mortierput, het Witte Huis, de begraafplaats en de Oude Kerk '
+        'naar de brug in Arnhem. '
         'Voor de basisschool.',
     locationIds: [
       'hartenstein',
@@ -24,11 +25,12 @@ const List<RouteModel> routes = [
       'dreyeroord',
       'cemetery',
       'oude_kerk',
+      'airborne_bridge',
       'john_frostbrug',
     ],
-    estimatedDistance: 'ca. 14 km',
-    estimatedDuration: 'ca. 3 uur',
-    difficulty: 'Basisschool (groep 7-8)',
+    estimatedDistance: 'ca. 12 km',
+    estimatedDuration: 'ca. 3,5 uur',
+    difficulty: 'Basisschool',
     texts: locationTextsA,
     missions: missionsA,
     finalMission: finalMissionA,
@@ -40,19 +42,22 @@ const List<RouteModel> routes = [
     title: 'Route B',
     subtitle: 'Over de Rijn naar de brug',
     description:
-        'Ontdek waarom de Rijn zo’n grote rol speelde: van Hartenstein via '
-        'Driel aan de overkant naar de brug en de verhalen van Arnhem. '
+        'Ontdek waarom de Rijn zo’n grote rol speelde: van Hartenstein door '
+        'de perimeter van Oosterbeek naar de brug en de verhalen van '
+        'Arnhem. '
         'Voor de middelbare school.',
     locationIds: [
       'hartenstein',
+      'mortierput',
+      'dreyeroord',
+      'cemetery',
       'oude_kerk',
-      'drielse_veer',
       'airborne_bridge',
       'john_frostbrug',
     ],
-    estimatedDistance: 'ca. 18 km',
-    estimatedDuration: 'ca. 3,5 uur',
-    difficulty: 'Middelbare school (havo/vwo)',
+    estimatedDistance: 'ca. 12 km',
+    estimatedDuration: 'ca. 4 uur',
+    difficulty: 'Middelbare school',
     texts: locationTextsB,
     missions: missionsB,
     finalMission: finalMissionB,
