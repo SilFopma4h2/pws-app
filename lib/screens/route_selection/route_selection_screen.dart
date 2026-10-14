@@ -71,10 +71,12 @@ class _RouteCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
+          Wrap(
+            spacing: 8,
+            runSpacing: 6,
             children: [
               ArchiveLabel(route.title),
-              const Spacer(),
+              ArchiveLabel(route.difficulty),
               if (selected) const ArchiveLabel('Gekozen', color: AppColors.red),
             ],
           ),
