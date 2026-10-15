@@ -535,7 +535,7 @@ const Map<String, Mission> missionsA = {
         type: MissionType.multipleChoice,
         prompt: 'Wat probeerde Viktor Gräbner te doen?',
         options: [
-          'Met zijn legervoertuigen over de brug rijden.',
+          'Met zijn legerwagens over de brug rijden.',
           'De brug schilderen.',
           'Een nieuwe brug bouwen.',
         ],
@@ -543,7 +543,7 @@ const Map<String, Mission> missionsA = {
         wrongFeedback: 'Nog niet. Lees de tweede alinea van de uitleg.',
         explanation:
             'Klopt. Hij wilde de Britten aan de noordkant van de brug '
-            'verdrijven.',
+            'wegjagen.',
       ),
       MissionTask(
         id: 'a_b3',

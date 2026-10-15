@@ -17,18 +17,19 @@ const Map<String, LocationText> locationTextsA = {
         'In de oorlog was dit huis het hoofdkwartier van de Britse soldaten. '
         'Een hoofdkwartier is de plek waar de leiders de plannen maken.',
     historyText:
-        'In 1944 was Nederland al vier jaar bezet door Duitsland. Soldaten uit '
-        'Engeland, Amerika en andere landen wilden Nederland bevrijden. Zij '
-        'heten de geallieerden.\n\n'
+        'In 1944 was Nederland al vier jaar bezet door Duitsland. Bezet betekent: de '
+        'Duitsers waren de baas. Soldaten '
+        'uit Engeland, Amerika en andere landen wilden Nederland bevrijden. '
+        'Zij heten de geallieerden.\n\n'
         'Ze bedachten een groot plan: Operatie Market Garden. Ze wilden een '
         'paar bruggen veroveren. De laatste en belangrijkste brug lag in '
         'Arnhem, over de rivier de Rijn.\n\n'
         'Op 17 september 1944 sprongen duizenden Britse soldaten met een '
         'parachute uit vliegtuigen. Ze landden op de hei, ver van de brug. '
         'Ze moesten nog ongeveer 10 kilometer lopen!\n\n'
-        'Vanuit dit huis gaf de Britse generaal Urquhart zijn bevelen. Hier '
-        'werd de verdediging van Oosterbeek geleid. Nu is het huis een '
-        'museum: het Airborne Museum.',
+        'Vanuit dit huis gaf de Britse generaal Urquhart zijn bevelen. Dat zijn '
+        'opdrachten voor de soldaten. Hier werd de verdediging van '
+        'Oosterbeek geleid. Nu is het huis een museum: het Airborne Museum.',
   ),
   'cemetery': LocationText(
     teaser:
@@ -56,9 +57,9 @@ const Map<String, LocationText> locationTextsA = {
         'Vanuit sommige kuilen schoten ze met een mortier. Een mortier is een '
         'soort kanon dat in een hoge boog schiet, over bomen en huizen heen.\n\n'
         'In deze kuil zaten Britse soldaten van het Border Regiment. Ze '
-        'schoten op Duitse soldaten die van de noordkant aanvielen.\n\n'
+        'schoten op Duitse soldaten die van de noordkant kwamen.\n\n'
         'Na 80 jaar zijn de meeste kuilen vol blaadjes en zand. Maar deze '
-        'kuil kun je nog steeds herkennen in de grond.',
+        'kuil kun je nog steeds zien in de grond.',
   ),
   'dreyeroord': LocationText(
     teaser:
@@ -87,18 +88,18 @@ const Map<String, LocationText> locationTextsA = {
         'Een heel oude kerk vlak bij de rivier. In 1944 werd hier gevochten.',
     shortDescription:
         'De Britten konden de brug in Arnhem niet bereiken. Daarom '
-        'verdedigden ze zich in Oosterbeek, ook hier bij de kerk.',
+        'beschermden ze zich in Oosterbeek, ook hier bij de kerk.',
     historyText:
         'De Britten zaten vast in Oosterbeek. Om hen heen stonden de Duitsers. '
-        'Alleen de kant van de rivier was nog open. Op een kaart leek hun '
-        'gebied op een hoefijzer.\n\n'
+        'Alleen aan de kant van de rivier was nog een weg open. Op een kaart '
+        'leek hun gebied op een hoefijzer.\n\n'
         'Deze kerk lag aan de zuidkant van dat gebied. Majoor Lonsdale '
-        'verzamelde hier soldaten van verschillende groepen. Samen heetten '
-        'ze de Lonsdale Force. Op 20 september trokken ze zich terug naar '
+        'bracht hier soldaten van verschillende groepen bij elkaar. Samen '
+        'heetten ze de Lonsdale Force. Op 20 september gingen ze terug naar '
         'deze kerk.\n\n'
         'In het huis naast de kerk woonde Kate ter Horst met haar vijf '
         'kinderen. Zij zorgde voor honderden gewonde soldaten. Ze las hen voor '
-        'uit de Bijbel om ze te troosten.\n\n'
+        'uit de Bijbel, zodat ze zich beter voelden.\n\n'
         'De gevechten waren tussen gewone huizen en tuinen, waar mensen '
         'gewoon woonden.',
   ),
@@ -115,9 +116,9 @@ const Map<String, LocationText> locationTextsA = {
         'ook een Nederlandse soldaat bij.\n\n'
         // CONTROLEER: korte levensverhalen van historische personen.
         'Hier leer je drie van hen kennen. John Grayburn was een Britse '
-        'luitenant. Na zijn dood kreeg hij een medaille voor dapperheid. '
-        'Viktor Gräbner was een Duitse kapitein. Hij probeerde met zijn '
-        'legervoertuigen over de brug te rijden. Jacob Groenewoud was een '
+        'luitenant. Na zijn dood kreeg hij een medaille omdat hij zo dapper '
+        'was. Viktor Gräbner was een Duitse kapitein. Hij probeerde met zijn '
+        'legerwagens over de brug te rijden. Jacob Groenewoud was een '
         'Nederlandse kapitein die de Britten hielp.\n\n'
         'Alle drie kwamen ze om bij de brug. Hun verhalen laten zien dat de '
         'oorlog mensen uit veel landen raakte.',
@@ -133,8 +134,9 @@ const Map<String, LocationText> locationTextsA = {
         'kwamen niet zo ver.\n\n'
         'Drie dagen en nachten hielden ze de brug vast. Ze wachtten op hulp '
         'van tanks uit het zuiden. Maar die hulp kwam niet op tijd.\n\n'
-        'Op 21 september moesten de soldaten zich overgeven. De brug werd '
-        'later kapotgemaakt. Na de oorlog is hij opnieuw gebouwd.',
+        'Op 21 september konden de soldaten niet meer en gaven ze zich over. '
+        'De brug werd later kapotgemaakt. Na de oorlog is hij opnieuw '
+        'gebouwd.',
   ),
 };
 
