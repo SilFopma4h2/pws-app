@@ -242,18 +242,19 @@ const Map<String, Mission> missionsA = {
         prompt: 'Bekijk de foto. Waarvoor was deze kuil?',
         imageAsset: 'assets/images/documents/mortierput_1944.jpg',
         imageCaption:
-            'Een ronde kuil met een wal van aarde eromheen. Naast de kuil '
-            'liggen lege kisten.',
+            'Britse soldaten bedienen een mortier vanuit een ingegraven kuil. '
+            'Slag om Arnhem, 20 september 1944.',
         options: [
           'Om veilig te zitten en te schieten.',
           'Om water uit te halen.',
           'Om fietsen in te zetten.',
         ],
         correctIndices: {0},
-        wrongFeedback: 'Nog niet. Let op de wal en de lege kisten.',
-        hints: ['In de kisten zat munitie. Dat zijn kogels en granaten.'],
+        wrongFeedback: 'Nog niet. Kijk wat de soldaten in de kuil doen.',
+        hints: ['Zie je de buis in het midden? Dat is de mortier.'],
         explanation:
-            'Goed! De wal beschermde de soldaten. In de kisten zat munitie.',
+            'Goed! In de kuil zaten de soldaten veiliger. Toch konden ze met de '
+            'mortier schieten.',
       ),
       MissionTask(
         id: 'a_p2',
@@ -754,8 +755,8 @@ const Map<String, Mission> missionsB = {
             'stelling?',
         imageAsset: 'assets/images/documents/mortierput_1944.jpg',
         imageCaption:
-            'Een ronde kuil met een wal van aarde eromheen. Naast de kuil '
-            'liggen lege kisten.',
+            'Britse soldaten bedienen een mortier vanuit een ingegraven kuil. '
+            'Slag om Arnhem, 20 september 1944.',
         options: [
           'De wal beschermde de bemanning, terwijl de mortier over de dekking '
               'heen kon vuren.',
@@ -764,7 +765,9 @@ const Map<String, Mission> missionsB = {
           'De kuil is na de oorlog gegraven als monument.',
         ],
         correctIndices: {0},
-        wrongFeedback: 'Nog niet. Let op de wal en de lege munitiekisten.',
+        wrongFeedback:
+            'Nog niet. Let op hoe diep de soldaten zitten en waar de mortier '
+            'naartoe wijst.',
         explanation:
             'Juist. De vorm van de stelling past bij hoe een mortier werkt.',
       ),
