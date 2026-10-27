@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../app/theme.dart';
 import '../../config/app_config.dart';
+import '../../data/photo_credits.dart';
 import '../../widgets/common/archive.dart';
 import '../../widgets/common/page_body.dart';
 import '../home/home_shell.dart';
@@ -64,6 +65,20 @@ class InfoScreen extends StatelessWidget {
             ),
           const SectionTitle('Over dit project'),
           const Text(_about),
+          const SectionTitle('Foto’s'),
+          Text(
+            'Foto’s via Wikimedia Commons. Bewerkt: bijgesneden.',
+            style: text.bodySmall?.copyWith(color: AppColors.muted),
+          ),
+          const SizedBox(height: 6),
+          for (final c in photoCredits)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Text(
+                '${c.subject} – ${c.author} (${c.license})',
+                style: text.bodySmall,
+              ),
+            ),
           const SizedBox(height: 20),
           Text(
             'Versie ${AppConfig.appVersion}',

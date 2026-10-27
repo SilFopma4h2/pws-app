@@ -200,6 +200,8 @@ Andere naam of formaat (bijv. `.png`)? Pas dan `imageAsset` aan in `locations.da
 
 Let op auteursrecht bij historische foto's: noem de bron (bijvoorbeeld via `imageCaption` en `sources`).
 
+De huidige foto's komen van Wikimedia Commons (CC0, publiek domein, CC BY of CC BY-SA). Maker, licentie en link staan in **`lib/data/photo_credits.dart`** en worden getoond op het Info-scherm. Vervang je een foto, werk die lijst dan ook bij.
+
 ## Bronnen aanpassen
 
 Bovenaan **`lib/data/locations.dart`** staan bronnen als `HistoricalSource(title, organization, url)`. Per locatie kies je welke bronnen getoond worden via `sources: [...]`. Ze verschijnen achter het kleine knopje "Bronnen".
